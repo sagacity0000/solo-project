@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Roboto&display=swap');
+
+body{
+    margin: 0;
+    /* min-height: 100vh; */
+    
+    
+}
+ 
+
+/* -------------------------------my heander start here---------------------------------------- */
+
+
+header{
+    display: flex;
+    background-color: gray;
+    height: 100px;
+}
+
+.search-type{
+    font-size: 24px;
+    margin: auto;
+    padding: 15 20px;
+}
+input{
+    width: 250px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: lightblue;
+    border: none;
+}
+label{
+    color: blue;
+    font-size: 25px;
+    margin-top: 22px;
+    margin-right: 7px;
+}
+.signout{
+    margin-top: 20px;
+    margin-right: 7px;
+}
+
+/* ----------------------------------my header ends here------------------------------------------------ */
+
+
+ 
+
+/* -------------------------------------my main-content start here------------------------------------------- */
+.main-container{
+    position: relative;
+    display: flex; 
+    background: radial-gradient(blue, yellow, black, black);
+    
+    justify-content: space-between;
+    
+    
+    /* min-height: calc(100vh-100px); */
+/* } */
+}
+.main-image{
+    background: linear-gradient(black, yellow);
+    flex-basis: 75%;
+    margin-bottom: 20px;
+    
+}
+
+.content{
+    /* flex-basis: 75%; */
+    /* flex-grow: 1; */
+    display: flex;
+    background: radial-gradient(yellow, black, black, gray);
+     /* width: 75%;  */
+     align-items: center;
+     justify-content: center;
+     margin-top: 0;
+    
+}
+/* 
+.logo{
+    position: relative;
+    display: block;
+    height: 80%;
+    line-height: 80px;
+    text-align: start;
+} */
+
+
+
+
+/* ----------------------------------------my sidebar start here------------------------------------------------ */
+
+
+.sidebar{
+    background-color: black;
+    box-shadow: 3px 3px 4px 3px gray;
+    border-radius: 10px;
+    position: static; 
+    left: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    flex-basis: 15%;
+    margin-bottom: 20px;
+    /* width: 15%; */
+
+
+    
+}
+
+.sidebar ul li a{
+    font-size: 20px;
+    list-style-type: none;
+    text-decoration: none;
+    /* width: 20%; */
+}
+
+
+.sidebar ul li:hover a{
+    color: red;
+    overflow: hidden;
+    
+}
+ 
+.sidebar ul li a{
+    color: yellow;
+}
+
+.fa-solid{
+    margin-left: 20px;
+    /* margin-top: 10px; */
+    margin-right: 15px;
+    margin-bottom: 40px;
+    /* gap: 5px; */
+    padding-right: 10px;
+    padding-left: 5px;
+}
+
+
+
+li{
+    list-style-type: none;
+}
+/* 
+
+.fa-brands{
+     position: relative;
+     display: block; 
+     padding: 0 10px; 
+     height: 60px; 
+     line-height: 60px;
+     text-align: start;
+    
+} */
+
+.fa-regular{
+    
+    margin-left: 20px;
+    /* margin-top: 10px; */
+    margin-right: 15px;
+    margin-bottom: 40px;
+    /* gap: 5px; */
+    padding-right: 10px;
+    padding-left: 5px;
+}
+
+/* -----------------------------------------------my sidebar end here------------------------------------------ */
+
+
+/* --------------------------------main-content area start here----------------------------------------------- */
+
+.property{
+    font-weight: 30px;
+    border: 25px;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    display: block;
+    justify-content: center;
+    margin: 15 20px;
+    box-sizing: 0;
+    border-radius: 15px;
+}
+.work{
+    color: white;
+    text-align: center;
+    font-family: cursive;
+    text-decoration: wavy;
+}
+
+
+/* style for agents here */
+.Agent{
+    background: linear-gradient(blue, gray);
+    margin: 0;
+    padding: 20px;
+}
+.Agent h1,p{
+    text-align: center;
+    color: white;
+}
+.flex{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.flex .sep{
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+}
+
+
+
+
+/* -----------------------start footer styles---------------------------------------------------- */
+
+
+footer {
+ margin: auto;
+   padding: 3rem 10rem;
+   max-width: 80rem;
+   background-color: #000;
+}
+
+.quick-links {
+   display: flex;
+   list-style: none;
+   gap: 5px;
+   justify-content: space-between;
+   margin: 15px -40px;
+}
+
+.footer-area {
+   display: grid;
+   grid-template-columns: 300px 1fr 1fr 1fr;
+   gap: 15px;
+}
+
+.footer-info ul {
+   list-style: none;
+   text-align: left;
+}
+
+li {
+   list-style: none;
+}
+
+a {
+   text-decoration: none;
+   color: #d7d7d7;
+}
+
+.footer-subscribe{
+   display: flex;
+   justify-content: space-between;
+
+}  
+
+/* ----------------------------footer design end here------------------------------------------ */
