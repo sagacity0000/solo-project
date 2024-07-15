@@ -15,6 +15,7 @@ header{
     display: flex;
     background-color: gray;
     height: 100px;
+    width: 100%;
 }
 
 .search-type{
@@ -35,10 +36,11 @@ label{
     margin-top: 22px;
     margin-right: 7px;
 }
-.signout{
+.Register{
     margin-top: 20px;
     margin-right: 7px;
 }
+
 
 /* ----------------------------------my header ends here------------------------------------------------ */
 
@@ -47,42 +49,31 @@ label{
 
 /* -------------------------------------my main-content start here------------------------------------------- */
 .main-container{
-    position: relative;
     display: flex; 
     background: radial-gradient(blue, yellow, black, black);
     
-    justify-content: space-between;
-    
-    
-    /* min-height: calc(100vh-100px); */
-/* } */
+
 }
 .main-image{
     background: linear-gradient(black, yellow);
-    flex-basis: 75%;
+    flex-basis: 85%;
     margin-bottom: 20px;
     
 }
 
 .content{
-    /* flex-basis: 75%; */
-    /* flex-grow: 1; */
     display: flex;
     background: radial-gradient(yellow, black, black, gray);
-     /* width: 75%;  */
      align-items: center;
      justify-content: center;
      margin-top: 0;
     
 }
-/* 
-.logo{
+.log{
     position: relative;
-    display: block;
-    height: 80%;
-    line-height: 80px;
+    display: inline;
     text-align: start;
-} */
+}
 
 
 
@@ -94,24 +85,27 @@ label{
     background-color: black;
     box-shadow: 3px 3px 4px 3px gray;
     border-radius: 10px;
-    position: static; 
     left: 0;
     bottom: 0;
     margin: 0;
     padding: 0;
     flex-basis: 15%;
     margin-bottom: 20px;
-    /* width: 15%; */
-
-
+    margin-left: 0px;
     
+}
+.sidebar ul li{
+    margin: 0px;
+    padding: 1.2rem 0rem;
+    list-style-type: none;
+
 }
 
 .sidebar ul li a{
-    font-size: 20px;
+    font-size: 15px;
     list-style-type: none;
     text-decoration: none;
-    /* width: 20%; */
+    color: yellow;
 }
 
 
@@ -120,19 +114,10 @@ label{
     overflow: hidden;
     
 }
- 
-.sidebar ul li a{
-    color: yellow;
-}
 
 .fa-solid{
-    margin-left: 20px;
-    /* margin-top: 10px; */
-    margin-right: 15px;
-    margin-bottom: 40px;
-    /* gap: 5px; */
-    padding-right: 10px;
-    padding-left: 5px;
+    padding-right: 3px;
+ 
 }
 
 
@@ -141,27 +126,9 @@ li{
     list-style-type: none;
 }
 /* 
-
-.fa-brands{
-     position: relative;
-     display: block; 
-     padding: 0 10px; 
-     height: 60px; 
-     line-height: 60px;
-     text-align: start;
-    
-} */
-
 .fa-regular{
-    
-    margin-left: 20px;
-    /* margin-top: 10px; */
-    margin-right: 15px;
-    margin-bottom: 40px;
-    /* gap: 5px; */
-    padding-right: 10px;
-    padding-left: 5px;
-}
+
+} */
 
 /* -----------------------------------------------my sidebar end here------------------------------------------ */
 
@@ -204,11 +171,34 @@ li{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 0;
 }
 .flex .sep{
     color: white;
     text-align: center;
     font-weight: bolder;
+}
+.flex-container{
+    background: linear-gradient(bisque, white);
+    border: none;
+    margin-top: 0;
+    box-sizing: border-box;
+
+}
+.senta{
+    width: 60%;
+    margin: auto;
+    font-weight: bolder;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+.rounded{
+    background-color: #000;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    
 }
 
 
@@ -227,15 +217,16 @@ footer {
 .quick-links {
    display: flex;
    list-style: none;
-   gap: 5px;
+   gap: 3px;
    justify-content: space-between;
-   margin: 15px -40px;
+   margin: 15px -10px;
 }
 
-.footer-area {
+.footer-area{
    display: grid;
    grid-template-columns: 300px 1fr 1fr 1fr;
-   gap: 15px;
+   justify-content: space-around;
+   margin-top: 100px;
 }
 
 .footer-info ul {
@@ -256,6 +247,266 @@ a {
    display: flex;
    justify-content: space-between;
 
-}  
+} 
+.space{
+    margin: 0;
+    padding: 50px 0px;
+    font-weight: bolder;
+    letter-spacing: 3px;
+} 
 
 /* ----------------------------footer design end here------------------------------------------ */
+
+
+/* Designs for mobile responsiveness */
+@media (max-width:740px) {
+    /* for header */
+    .search-type {
+            font-size: 15px;
+            margin: auto;
+            padding: 10 15px;
+        }
+    
+        input {
+            width: 130px;
+            padding: 7px;
+            border-radius: 10px;
+            background-color: lightblue;
+            border: none;
+        }
+    
+        label {
+            color: blue;
+            font-size: 17px;
+            margin-top: 39px;
+            margin-right: 7px;
+        }
+    
+        .Register {
+            margin-top: 35px;
+            margin-right: 7px;
+        }
+        .head{
+            font-size: 20px;
+            text-align: center;
+        }
+        .space {
+            margin: 0;
+            padding: 25px 0px;
+            font-weight: bold;
+            letter-spacing: 1.5px;
+            font-size: 11px;
+            }
+            .property {
+                font-weight: 20px;
+                border: 25px;
+                font-size: 30px;
+                color: white;
+                text-align: center;
+                padding: 10px;
+                display: block;
+                justify-content: center;
+                margin: 7px 20px;
+                box-sizing: 0;
+                border-radius: 15px;
+            }
+            .senta {
+            width: 60%;
+            margin: auto;
+            font-weight: bolder;
+            font-size:13px;
+            box-sizing: border-box;
+            }
+
+            .rounded {
+            background-color: #000;
+            color: white;
+            padding: 3px;
+            border-radius: 5px;
+            margin-bottom: 2px;
+
+            }
+            footer {
+                margin: auto;
+                padding: 1.5rem 7rem;
+                max-width: 100rem;
+                background-color: #000;
+            }
+
+            .quick-links {
+                font-size: 12px;
+                display: flex;
+                list-style: none;
+                gap: 2px;
+                justify-content: space-between;
+                margin: 10px -5px;
+            }
+
+            .footer-area {
+                display: grid;
+                grid-template-columns: 230px 1fr 1fr 1fr;
+                justify-content: space-around;
+                margin-top: 100px;
+            }
+            .footer-info{
+                font-size: 11px;
+            }
+
+            .footer-info ul {
+                list-style: none;
+                text-align: left;
+            }
+
+            li {
+                list-style: none;
+            }
+
+            a {
+                text-decoration: none;
+                color: #d7d7d7;
+            }
+
+            .footer-subscribe {
+                display: flex;
+                justify-content: space-between;
+
+            }
+
+            .space {
+                margin: 0;
+                padding: 30px 0px;
+                font-weight: bolder;
+                letter-spacing: 1.5px;
+            }
+
+}
+
+@media (max-width:565px) {
+
+    /* for header */
+    .search-type {
+        font-size: 10px;
+        margin: auto;
+        padding: 6 10px;
+    }
+
+    input {
+        width: 80px;
+        padding: 4px;
+        border-radius: 10px;
+        background-color: lightblue;
+        border: none;
+    }
+
+    label {
+        color: blue;
+        font-size: 12px;
+        margin-top: 39px;
+        margin-right: 7px;
+    }
+
+    .Register {
+        margin-top: 35px;
+        margin-right: 7px;
+    }
+
+    .head {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .space {
+        margin: 0;
+        padding: 15px 0px;
+        font-weight: bold;
+        letter-spacing: 1.0px;
+        font-size: 7px;
+    }
+
+    .property {
+        font-weight: 20px;
+        border: 25px;
+        font-size: 30px;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        display: block;
+        justify-content: center;
+        margin: 7px 20px;
+        box-sizing: 0;
+        border-radius: 15px;
+    }
+
+    .senta {
+        width: 60%;
+        margin: auto;
+        font-weight: bolder;
+        font-size: 13px;
+        box-sizing: border-box;
+    }
+
+    .rounded {
+        background-color: #000;
+        color: white;
+        padding: 2px;
+        border-radius: 5px;
+        margin-bottom: 2px;
+        font-size: 7px;
+
+    }
+
+    footer {
+        margin: auto;
+        padding: 1.0rem 4rem;
+        max-width: 100rem;
+        background-color: #000;
+    }
+
+    .quick-links {
+        font-size: 10px;
+        display: flex;
+        list-style: none;
+        gap: 1px;
+        justify-content: space-between;
+        margin: 5px -1px;
+    }
+
+    .footer-area {
+        display: grid;
+        grid-template-columns:150px 1fr 1fr 1fr;
+        justify-content: space-around;
+        margin-top: 100px;
+    }
+
+    .footer-info {
+        font-size: 7px;
+    }
+
+    .footer-info ul {
+        list-style: none;
+        text-align: left;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: #d7d7d7;
+    }
+
+    .footer-subscribe {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .space {
+        margin: 0;
+        padding: 20px 0px;
+        font-weight: bolder;
+        letter-spacing: 1.5px;
+    }
+
+}
